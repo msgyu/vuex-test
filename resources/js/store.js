@@ -15,7 +15,7 @@ export default new Vuex.Store({
         addLocalCounter(state, num) {
             var localnum = Number(state.LocalCount);
             var count = localnum + num;
-            window.localStorage.setItem("LocalCount", count);
+            localStorage.setItem("LocalCount", count);
             state.LocalCount = count;
         },
         resetCounter(state) {

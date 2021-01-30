@@ -54498,7 +54498,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__
     addLocalCounter: function addLocalCounter(state, num) {
       var localnum = Number(state.LocalCount);
       var count = localnum + num;
-      window.localStorage.setItem("LocalCount", count);
+      localStorage.setItem("LocalCount", count);
       state.LocalCount = count;
     },
     resetCounter: function resetCounter(state) {
